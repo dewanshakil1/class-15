@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container shadow-lg">
+      <h2 class="text-uppercase text-center bg-info py-2 my-1 text-white ">analog clock</h2>
+      <div class="row">
+        <div class="col shadow-lg clockShado">
+          <div class="clock">
+            <div class="h"></div>
+            <div class="m"></div>
+            <div class="s"></div>    
+          </div>
+        </div>
+        <div class="col">
+          <div class="clock">
+            <div class="ho2"></div>
+            <div class="m2"></div>
+            <div class="s2"></div>    
+          </div>
+        </div>
+      </div>     
+    </div>  
+    <div class="instantValue container ">
+      <h2 class="text-uppercase text-center bg-info py-2 my-1 text-white ">quick skills apps</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="text-center skillBoder">input text</h4>
+         <div class="form-group">         
+           <input class="ml-2 skill"  type="checkbox" value="React Developer" id="react"> <label for="react">React Developer</label> <br>
+           <input class="ml-2 skill"    type="checkbox" value="java Developer" id="java"> <label for="java">java Developer</label> <br>
+           <input class="ml-2 skill"   type="checkbox" value="IOS Developer" id="IOS"> <label for="IOS">IOS Developer</label> <br>
+           <input class="ml-2 skill"   type="checkbox" value="Python Developer" id="Python"> <label for="Python">Python Developer</label> <br>
+           <input class="ml-2 skill"   type="checkbox" value="javascript Developer" id="javascript"> <label for="javascript">javascript Developer</label> <br>           
+         </div>  
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-center skillBoder">skills output</h4>     
+          <ul class="list-group " id="listI">      
+          </ul>
+        </div>
+      </div>     
+    </div>
+    <!-- 
+      cultolator app
+     -->
+     <h2 class="text-uppercase text-center bg-info py-2 my-1 text-white "> calculator apps</h2>    
+     <div class="Coltualtor">      
+      <div class="display">
+        <div class="topS w-100">
+          <div class="topM">0</div>
+
+        </div>        
+        <div class="mainM"></div>
+       
+      </div>
+        <div class="buttons">
+          <div class="row">
+            <div class="buttonAC d-flex justify-content-between w-100">
+              <button  onclick="allclear()" >AC</button>
+              <button onclick="back()">C</button>
+
+            </div>         
+          <input type="button"  value=7 onClick="getVal(value)">
+            <input type="button"  value=8 onClick="getVal(value)">
+            <input type="button"  value=9 onClick="getVal(value)">
+            <input type="button" n value=+ onClick="getVal(value)">
+          </div>
+          
+          <div class="row">
+          <input type="button"  value=4 onClick="getVal(value)">
+            <input type="button"  value=5 onClick="getVal(value)">
+            <input type="button"  value=6 onClick="getVal(value)">
+            <input type="button" value=- onClick="getVal(value)">
+          </div>
+          
+          <div class="row">
+          <input type="button"  value=1 onClick="getVal(value)">
+            <input type="button" value=2 onClick="getVal(value)">
+            <input type="button"  value=3 onClick="getVal(value)">
+            <input type="button"  value=* onClick="getVal(value)">
+          </div>
+          
+          <div class="row">
+          <input type="button"  value=0 onClick="getVal(value)">
+            <input type="button" value=. onClick="getVal(value)">
+            <input type="button"  value=/ onClick="getVal(value)">
+            <input type="button" class="red" value= = onClick="final()">
+          </div>
+        </div>
+      
+      
+    
+      
+    <!-- Optional JavaScript -->
+    <script src="js/function.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

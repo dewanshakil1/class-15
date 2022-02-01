@@ -1,0 +1,203 @@
+
+.clock{
+    width: 400px;
+    height: 400px;       
+    background-size: 100% 100%;
+    background-position: center center;
+    border: 10px solid #041562;
+    border-radius: 50%;    
+   display: flex;
+   justify-content: center;   
+   align-items: center;
+    background-image:url(img/clock.jpg);
+    background-repeat: no-repeat;
+}
+.clock::before{
+    content:"";
+    width: 20px;
+    height: 20px;
+    background:black;
+    border-radius: 50%;
+    position: absolute;
+}
+.h{     
+    width: 0px;
+    height: 230px;
+    transform: rotate(75deg);
+    display: flex;
+    justify-content: center;
+}
+.h::before{
+    content: "";
+    width: 9px;
+    height: 124px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+}
+.m{      
+    width: 0px;
+    height: 257px;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+}
+.m::before{
+    content: "";
+    width: 3px;
+    height: 138px;
+    background-color: rgb(22, 24, 21);
+    position: absolute;
+}
+.s{   
+    width: 0px;
+    height: 300px;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+}
+.s::before{
+    content: "";
+    width: 3px;
+    height: 170px;
+    background-color: rgb(207, 11, 11);
+    position: absolute;
+}
+.skillBoder{
+    border: 2px solid rgb(0, 255, 170);
+    border-width: 3px;
+    height: 37px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+}
+.ho2{
+    width: 0px;
+    height: 215px;
+    transform: rotate(75deg);
+    display: flex;
+    justify-content: center;
+}
+.ho2::before {
+    content: "";
+    width: 31px;
+    height: 113px;
+    background-image: url(img/h.kata2.png);
+    background-size: contain;
+    position: absolute;
+}
+.m2{
+    width: 0px;
+    height: 250px;
+    transform: rotate(237deg);
+    display: flex;
+    justify-content: center;
+
+}
+.m2::before {
+    content: "";
+    width: 27px;
+    height: 138px;
+    background-image: url(img/m.kata2.png);
+    position: absolute;
+    background-size: contain;
+}
+.s2{
+    width: 0px;
+    height: 256px;
+    transform: rotate(120deg);
+    display: flex;
+    justify-content: center;
+   
+}
+.s2::before{
+    content: "";
+    width: 17px;
+    height: 170px;
+    background-image: url(img/s.kata2.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+/* 
+caltulator apps
+*/
+.Coltualtor {    
+    top: 50%;
+    left: 50%;
+    transform: translate(90%, 11%);
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    border-radius: 14px;
+    padding-bottom: 20px;
+    width: 191px;
+    margin-bottom: 49px;
+    margin-left: 244px;
+    margin-top: -31px;
+}
+  .display {
+    width: 100%;
+    height: 54px;
+    padding: 24px 0;
+    background: #000000;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+  .topM{
+    margin-left: 138px;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+    margin-top: -20px;
+    width: 550px;
+    margin-bottom: 11px;
+}
+.mainM {
+    margin-left: 134px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: -18px;
+}
+.buttonAC{
+    margin-top: -16px;  
+ 
+}   
+  .buttons {
+    padding: 20px 20px 0 20px;
+  }
+
+  input[type=button] {
+    width: 40px;
+    height: 40px;    
+    padding: 0;
+    margin: 2px;
+    box-sizing: border-box;
+    background: #ecedef;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #5E5858;
+   
+}
+input[type=text] {
+    width: 100px;
+    height: 60px;
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    color: #040404;
+    text-align: right;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    margin: -20px 86px;
+    
+  }
+  .red {
+    background: #FF0509 !important;
+    color: #ffffff !important;    
+  }  
